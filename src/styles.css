@@ -1,0 +1,167 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Главный экран */
+.main-screen {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  transition: transform 0.3s ease;
+}
+
+.main-screen:hover {
+  transform: scale(1.02);
+}
+
+.main-screen h1 {
+  font-size: 28px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.open-tracker {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.open-tracker:hover {
+  opacity: 0.8;
+}
+
+/* Контейнер трекера */
+.habit-tracker-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.habit-tracker-container:hover {
+  transform: scale(1.02);
+}
+
+.title {
+  font-size: 26px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Кнопка назад */
+.back-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #ff512f;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #dd2476;
+}
+
+.input-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.habit-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.habit-input:focus {
+  border-color: #ff7e5f;
+}
+
+.add-button {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.add-button:hover {
+  opacity: 0.8;
+}
+
+.habit-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s;
+  border-radius: 8px;
+}
+
+.habit-item:hover {
+  background: rgba(255, 126, 95, 0.1);
+}
+
+.habit-text {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.habit-text.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.remove-button {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.remove-button:hover {
+   opacity: 0.8;
+}
